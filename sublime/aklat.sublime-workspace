@@ -1,0 +1,882 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Conn",
+				"Connection"
+			],
+			[
+				"mysql",
+				"mysql_close"
+			],
+			[
+				"co",
+				"conn"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"backgo",
+				"background"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"base",
+				"base64_decode"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"ca",
+				"cart"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"border",
+				"border-spacing"
+			],
+			[
+				"edit",
+				"editWine"
+			],
+			[
+				"delete",
+				"delete_wine"
+			],
+			[
+				"wine",
+				"wineIdx"
+			],
+			[
+				"array_slice",
+				"array_splice"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"parse",
+				"parse_url"
+			],
+			[
+				"session_re",
+				"session_regenerate_id"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"prod",
+				"prod_range"
+			],
+			[
+				"array_s",
+				"array_slice"
+			],
+			[
+				"new",
+				"new_user"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"session",
+				"session_start"
+			],
+			[
+				"arr",
+				"arrName"
+			],
+			[
+				"sub",
+				"submit2"
+			],
+			[
+				"rand",
+				"randomNum"
+			],
+			[
+				"ran",
+				"randNum"
+			],
+			[
+				"cap",
+				"capitals"
+			],
+			[
+				"fith",
+				"fifth"
+			],
+			[
+				"num",
+				"num"
+			],
+			[
+				"strr",
+				"strrev"
+			],
+			[
+				"st",
+				"strong"
+			],
+			[
+				"border-c",
+				"border-collapse"
+			],
+			[
+				"str_s",
+				"str_split"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"onc",
+				"onchange	Attr"
+			],
+			[
+				"opt",
+				"option	Tag"
+			],
+			[
+				"b",
+				"bSqrt"
+			],
+			[
+				"a",
+				"aSqrt"
+			],
+			[
+				"A",
+				"Average"
+			],
+			[
+				"grade",
+				"gradeCount"
+			],
+			[
+				"clear",
+				"clearDisplay"
+			],
+			[
+				"sum",
+				"sum_denom"
+			],
+			[
+				"den_",
+				"den_y"
+			],
+			[
+				"oper",
+				"operator"
+			],
+			[
+				"dis",
+				"disabled"
+			],
+			[
+				"word",
+				"word-break"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"mouse",
+				"mouseenter"
+			],
+			[
+				"display",
+				"displayHTML"
+			],
+			[
+				"comment",
+				"comment-edit"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"la",
+				"larger"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"align",
+				"text-align"
+			],
+			[
+				"image",
+				"images"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"marig",
+				"margin-top"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"list",
+				"list-style-position"
+			],
+			[
+				"cle",
+				"clear"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"border-b",
+				"border-bottom-left-radius"
+			],
+			[
+				"ba",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/mbuella/project2/README.md",
+			"settings":
+			{
+				"buffer_size": 904,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/mbuella/project2/index.php",
+			"settings":
+			{
+				"buffer_size": 4528,
+				"line_ending": "Windows",
+				"name": "html"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "Snippet: ",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: html"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"rename",
+			"rename \"output.html\"",
+			"rename \"output.html'",
+			"rename output.html"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Tuitt Batch 4/Desktop/trial_directory/Bootply snippet - Center Navbar Brand.html",
+		"/C/xampp/htdocs/mbuella/git/playground/vejeux/scripts/main.js",
+		"/C/xampp/htdocs/mbuella/git/playground/vejeux/vins_lib.php",
+		"/C/Users/Tuitt Batch 4/.gitconfig",
+		"/C/Users/Tuitt Batch 4/Desktop/git_tutorial/gitpamore.html",
+		"/C/Users/Tuitt Batch 4/Desktop/git_tutorial/.gitignore",
+		"/C/Users/Tuitt Batch 4/Desktop/git_tutorial/hello.html",
+		"/C/xampp/htdocs/mbuella/git/playground/easy_mvc/index.php",
+		"/C/xampp/htdocs/mbuella/git/playground/easy_mvc/README.md",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/data/trans.json",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/styles/style.css",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/checkout_success.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/data/users.json",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/messages/error/pwordMismatch.html",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/data/wines.json",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/data/sample_orders.json",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/messages/error/usernameExists.html",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/jeux.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/members.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/findus.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/delete_wine.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/edit_wine.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/index.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/profile.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/scripts/main.js",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/signin.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/footer.html",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/head.html",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/header.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/signup.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/regular.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/view_cart.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/checkout.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/addWine.html",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/edit_wine_form.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/addWine.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/view_wine.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/wine.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/main_right.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/main.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/comingsoon.html",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/checkout_success1.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/checkout_confirm.php",
+		"/C/xampp/htdocs/mbuella/project1/index.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/project1/code/index.html",
+		"/C/Program Files/Git/etc/ssh/sshd_config",
+		"/C/Program Files/Git/etc/ssh/ssh_config",
+		"/C/xampp/htdocs/mbuella/playground/easy_mvc/.git/config",
+		"/C/xampp/htdocs/mbuella/playground/simple_mvc/data/accounts.json",
+		"/C/xampp/htdocs/mbuella/playground/simple_mvc/views/count.php",
+		"/C/xampp/htdocs/mbuella/playground/simple_mvc/views/signin.php",
+		"/C/xampp/htdocs/mbuella/playground/simple_mvc/controllers/controllers.php",
+		"/C/xampp/htdocs/mbuella/playground/simple_mvc/models/model.php",
+		"/C/xampp/htdocs/mbuella/playground/simple_mvc/views/layout.php",
+		"/C/xampp/htdocs/mbuella/playground/simple_mvc/index.php",
+		"/C/xampp/htdocs/mbuella/playground/simple_mvc/original/index.php",
+		"/C/xampp/htdocs/mbuella/playground/simple_mvc/views/info.php",
+		"/C/xampp/htdocs/mbuella/playground/guessNumber.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/addItem.php",
+		"/C/xampp/htdocs/mbuella/playground/simple-login.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/profile_regular.php",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/exercise1_js/codemagic.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/jquery/practice1.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/jquery/commentbox.html",
+		"/C/xampp/htdocs/mbuella/playground/exc_02_28_2017.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/login.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/signup.html",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/signin.html",
+		"/C/xampp/htdocs/mbuella/playground/users.json",
+		"/C/xampp/htdocs/mbuella/playground/12days/12days.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/head.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/boardgames.php",
+		"/C/xampp/htdocs/mbuella/exercises/exercise_a/header.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/javascript/myCalc.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/javascript/trashy.html",
+		"/C/xampp/htdocs/mbuella/playground/practice1.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise1.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise2.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise3.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise4.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise5.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise6.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise8.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise7.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise9.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise10.php",
+		"/C/xampp/htdocs/mbuella/playground/exercise11.php",
+		"/C/xampp/htdocs/mbuella/playground/exc_02_24_2017.php",
+		"/C/xampp/htdocs/mbuella/playground/12days/exc_02_27_2017.php",
+		"/C/xampp/htdocs/mbuella/playground/arrLib.php",
+		"/C/xampp/htdocs/mbuella/playground/assocArr.php",
+		"/C/xampp/htdocs/mbuella/playground/12days/exc_02_28_2017.php",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/javascript/myCalc2.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/php/practice1.php",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/php/exercise1.php",
+		"/C/Users/Tuitt Batch 4/Desktop/math.html",
+		"/C/Users/Tuitt Batch 4/Desktop/math.xhtml",
+		"/C/Users/Tuitt Batch 4/Desktop/playground-master/README.md",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/javascript/practice1.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/jquery/dombox.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/bootstrap/bs1.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/bootstrap/bs2.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise12/index.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/javascript/practice2.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/javascript/practice3.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/javascript/commentbox.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/project1/code/css/style.css",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/project1/code/LICENSE",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/project1/code/mainpost.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise12/css/style.css",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise10/Simply Me/index.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise10/Company/index.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise9/css/tablet.css",
+		"/C/Users/Tuitt Batch 4/Downloads/basicgrid.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise11/css/style.css",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise11/index.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise11/index.php",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise9/index.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise9/css/mobile.css",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise9/css/style.css",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/responsive/index.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise4/exercise4.html",
+		"/C/Users/Tuitt Batch 4/Downloads/answer_floatsandclears.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise6/exercise6.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise1.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/playground/triangleDiv.html",
+		"/C/Users/Tuitt Batch 4/Documents/mbuella/exercise4/style.css",
+		"/C/Users/Tuitt Batch 4/Downloads/samplelayout_floats_clears.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\mbuella\\exercises\\exercise_a"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"loadCart()",
+			"loadCart();",
+			"addToCart",
+			"add-to",
+			"main.container div#main-left h3",
+			"div#main-right .wine-types a > div",
+			"div#main-right .wine-types a div",
+			"main-right",
+			"$_SESSION['user']",
+			"number_format",
+			"getUserRecord",
+			"header(\"Location: index.php\")",
+			"getWineRecord(",
+			"$wine_price",
+			"$_SESSION['wine']",
+			"$wine",
+			"SESSION",
+			"displa",
+			"add-to-",
+			"wine-des",
+			"desc",
+			"-origin",
+			"wine-",
+			"wines()",
+			"search-",
+			"striped",
+			"user_type",
+			"login",
+			"]",
+			"{",
+			"[",
+			"main-right",
+			"4",
+			"em",
+			"comment-edit",
+			"pressOp",
+			"Site Name",
+			"1px solid black",
+			".archives ",
+			"1px solid;",
+			".article ",
+			"h3",
+			".main-post",
+			"width: 100%",
+			"hr",
+			"	\n",
+			"button",
+			"container",
+			".types .type",
+			"h3",
+			"padding-top",
+			"padding-bottom",
+			"style=\"height: 222.75px; overflow: auto;\"",
+			"float",
+			";\n",
+			"img",
+			"margin-left",
+			"grey-box3",
+			"1",
+			"active",
+			"left img",
+			"article",
+			"height",
+			";\n",
+			"sub-menu",
+			"div",
+			"</html>",
+			"html",
+			"suscupit",
+			"suscipit",
+			"dolar",
+			">",
+			"1",
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"signin",
+			"}",
+			"{",
+			"4",
+			"commentEdit",
+			"insert"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/mbuella/project2/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 904,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/mbuella/project2/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"auto_name": "html",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.243045387994,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.436090225564,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
