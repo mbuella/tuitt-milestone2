@@ -1,0 +1,8 @@
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../vendors/bootstrap/styles/bootstrap.min.css">
+
+	<!-- jQuery -->
+	<script src="../vendors/jquery/scripts/jquery.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="../vendors/bootstrap/scripts/bootstrap.min.js"></script>

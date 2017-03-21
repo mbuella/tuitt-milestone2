@@ -3,14 +3,10 @@
 <head>
 	<title>Mabuhay! | kwntu</title>
 
-
 	<!-- meta tags -->	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-	<!-- FONTS -->
 
 	<!-- Raleway font -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -19,28 +15,173 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
 	<!-- Font Awesome! -->
-	<link rel="stylesheet" type="text/css" href="vendors/fontawesome/styles/font-awesome.min.css">
-
-
-	<!-- ASSETS TO USE IN DEVELOPMENT (for faster loading time)  -->
+	<link rel="stylesheet" type="text/css" href="assets/vendors/fontawesome/font-awesome.min.css">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="vendors/bootstrap/styles/bootstrap.min.css">
-
-	<!-- jQuery -->
-	<script src="vendors/jquery/scripts/jquery.min.js"></script>
-
-	<!-- Bootstrap JS -->
-	<script src="vendors/bootstrap/scripts/bootstrap.min.js"></script>
-
-
-	<!-- CUSTOM -->
+	<!-- <link rel="stylesheet" href="styles/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- custom style -->
-	<link rel="stylesheet" href="assets/styles/main.css">
+	<!-- <link rel="stylesheet" href="styles/style.css"> -->
+
+	<!-- jQuery -->
+	<!-- <script src="scripts/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- <script src="scripts/bootstrap.min.js"></script> -->
 
 	<!-- custom Javascript -->
-	<script src="assets/scripts/main.js"></script>
+	<!-- <script src="scripts/main.js"></script> -->
+
+	<style>
+		body {
+			font-family: "Raleway",Arial;	
+			background-color: #0a0020;
+			color: #866183;
+			font-size: 15px;
+		}
+
+		*.container {
+			width: 1000px;
+		}
+
+		h1, h2, h3, h4 {
+			font-family: "Lora","Times New Roman";	
+		}
+
+		.navbar,
+		.jumbotron {
+			border-radius: 0 !important;
+		}
+
+		.navbar {	
+    		background-color: #554b6b;
+    		/*color: #866183;*/
+			margin-bottom: 0;
+			border: 0;
+		}
+
+		.navbar > .container-fluid {
+			padding: 0;
+		}
+
+		.navbar > .container-fluid > .navbar-collapse {
+			padding: 0 10px;
+		}
+
+		.navbar-nav {
+			width: 100%;
+			text-align: center;
+		}
+		.navbar-nav > li {
+			float: none;
+			display: inline-block;
+		}
+
+		.navbar-brand {
+			float:none;
+		}
+
+		.popover {
+			width: 225px;
+			left: -75px !important;
+		}
+
+		.navbar-right {
+		    margin-right: 0; 
+		}
+
+		input.form-control {}
+
+		.logo-img {
+			padding: 5px;
+		}
+
+		.logo-img img {
+			width: 84px;
+		}
+
+		.jumbotron {
+    		height: 600px;
+    		margin-bottom: 0 !important;
+    		padding-top: 130px;
+    		padding-bottom: 10px;		
+    		color: #f5f5f5;
+    		background: linear-gradient(
+					      rgba(41, 7, 36, 0.7), 
+					      rgba(41, 7, 36, 0.7)
+					    ),
+    					url("assets/images/hero.jpg") 
+							no-repeat
+							bottom center/cover;
+		}
+
+		.jumbotron > * {
+			margin-top: 60px;
+		}
+
+		.jumbotron > h2 {
+		    width: 400px;
+		    margin: 60px auto 0;			
+		}
+
+		.arrow-scroll {			
+		    bottom: 0;
+		    position: absolute;
+		    left: 48%;
+		}
+
+		#about-section {
+			margin: 20px 0;
+		}
+
+		.about-buttons {	
+			position: absolute;
+			z-index: 1;
+    		margin-left: 370px;
+			margin-top: -24px;
+		}
+
+		.about-buttons > a {			
+		    width: 40px;
+		    height: 40px;
+		    border: 1px solid white;
+		    padding: 5px;
+		    text-align: center;
+		    border-radius: 50%;
+		    background: white;
+		    font-weight: bold;
+		    font-size: 1.5em;
+		    float: left;
+		    margin: 3px;
+		    text-decoration: none;
+		}
+
+		.about-content {
+			margin-top: 40px;
+		}
+
+		.about-content > div > div {			
+    		background: lightblue;
+    		padding: 10px 30px;
+    		height: 500px;
+		}
+
+		.about-content > div > div > div:nth-child(even) {
+			text-align: right;
+			float: right;
+		}
+
+		/*footer*/
+
+		#social a {
+			float: right;
+			margin: 0 5px;
+    		margin-bottom: 10px;
+		}
+	</style>
 
 </head>
 <body>
@@ -68,7 +209,7 @@
 					<ul class="nav navbar-nav">
 						<li class="pull-left">
 							<a href="#">
-								<span class="fa fa-home"></span>	        		
+								<span class="glyphicon glyphicon-home"></span>	        		
 							</a>
 						</li>
 						<li class="pull-left"><a href="#">Genres</a></li>
@@ -82,7 +223,7 @@
 						<!-- Items on the right (first entry is last to display) -->
 						<li class="pull-right">
 							<a href="#">
-								<span class="fa fa-search"></span>	        	
+								<span class="glyphicon glyphicon-search"></span>	        	
 							</a>
 						</li>
 						<li class="pull-right">
@@ -227,6 +368,25 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="text/javascript">	
+
+        $(document).ready(function() {
+        	$("[data-toggle=popover]").popover({
+			    html: true, 
+				content: function() {
+          			return $('#popover-content').html();
+        		}
+			});
+
+			$('#home-next').click(function(){
+			    $('html, body').animate({
+			        scrollTop: $("#about-section").offset().top
+			    }, 1500);
+			});
+        });
+
+	</script>
 
 </body>
 </html>
