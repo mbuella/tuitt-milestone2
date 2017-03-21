@@ -75,7 +75,7 @@ input.form-control {}
 			      rgba(41, 7, 36, 0.7), 
 			      rgba(41, 7, 36, 0.7)
 			    ),
-				url("../../assets/images/hero.jpg") 
+				url("../images/hero.jpg") 
 					no-repeat
 					bottom center/cover;
 }
