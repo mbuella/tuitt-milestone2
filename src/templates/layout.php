@@ -23,7 +23,7 @@
 	<?php
 		#html vendor styles/scripts
 
-		echo $vendor;
+		echo $GLOBALS['vendor'];
 	?>	
 
 

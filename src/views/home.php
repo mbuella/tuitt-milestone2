@@ -19,14 +19,14 @@
 	</div>
 
 	<!-- About -->
-	<div class="carousel slide" data-ride="carousel" id="about-section">
+	<div class="carousel slide" data-ride="carousel" id="about">
 		<!-- button div -->
 		<div class="about-buttons">
-			<a href="#" data-target="#about-section" data-slide-to="0" class="active">k</a>
-			<a href="#" data-target="#about-section" data-slide-to="1">w</a>
-			<a href="#" data-target="#about-section" data-slide-to="2">n</a>
-			<a href="#" data-target="#about-section" data-slide-to="3">t</a>
-			<a href="#" data-target="#about-section" data-slide-to="4">u</a>
+			<a href="#" data-target="#about" data-slide-to="0" class="active">k</a>
+			<a href="#" data-target="#about" data-slide-to="1">w</a>
+			<a href="#" data-target="#about" data-slide-to="2">n</a>
+			<a href="#" data-target="#about" data-slide-to="3">t</a>
+			<a href="#" data-target="#about" data-slide-to="4">u</a>
 			<div class="clearfix"></div>
 		</div>
 		<!-- content div -->

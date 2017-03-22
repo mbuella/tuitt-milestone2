@@ -21,11 +21,11 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="pull-left">
-						<a href="#">
+						<a href="./">
 							<span class="fa fa-home"></span>	        		
 						</a>
 					</li>
-					<li class="pull-left"><a href="#">Genres</a></li>
+					<li class="pull-left"><a href="genres">Genres</a></li>
 					<li class="pull-left"><a href="#">Authors</a></li>
 
 					<!-- Centered logo image -->
@@ -35,8 +35,13 @@
 
 					<!-- Items on the right (first entry is last to display) -->
 					<li class="pull-right">
-						<a href="#">
-							<span class="fa fa-search"></span>	        	
+						<form class="search-form">
+							<input name="search-keyword"
+								   class="search-box"
+								   placeholder="Search author, genre, etc..."></input>
+						</form>
+						<a href="#" class="search-button">
+							<span class="fa fa-search"></span>        	
 						</a>
 					</li>
 					<li class="pull-right">
@@ -48,7 +53,9 @@
 							<strong class="caret"></strong>
 						</a>
 					</li>
-					<li class="pull-right"><a href="#">About</a></li>
+					<li class="pull-right">
+						<a href="../kwntu/#about">About</a>
+					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->

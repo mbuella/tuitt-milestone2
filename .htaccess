@@ -1,6 +1,6 @@
 RewriteEngine On
 # WARNING!!! Change when copied to another workplace
-RewriteBase /tuitt/kwntu/
+RewriteBase /mbuella/kwntu/
 
 RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
 RewriteRule ^ %1 [L,NE,R=302]
@@ -11,5 +11,5 @@ RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
 # exclude filter of files (css/js)
 RewriteCond %{REQUEST_FILENAME} !-f
 
-# redirect all requests to public/index.php
+# redirect all requests to public/
 RewriteRule ^(.*)$ public/ [L]
