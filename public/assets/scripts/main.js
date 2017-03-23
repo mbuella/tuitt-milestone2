@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 	$('#home-next').on('click', function(e){
 	    $('html, body').animate({
-	        scrollTop: $("#about").offset().top -30
+	        scrollTop: $("#about").offset().top +10
 	    }, 1500);
 	});
 

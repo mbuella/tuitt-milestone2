@@ -28,6 +28,10 @@
 	    	genres_action();
 			break;
 
+		case $index . "stories":
+	    	stories_action();
+			break;
+
 		default:
 		    header('HTTP/1.1 404 Not Found');
 		    echo '<html><body><h1>Page Not Found</h1></body></html>';

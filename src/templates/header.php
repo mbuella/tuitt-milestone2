@@ -21,7 +21,7 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="pull-left">
-						<a href="./">
+						<a href="../kwntu/#">
 							<span class="fa fa-home"></span>	        		
 						</a>
 					</li>
@@ -37,7 +37,7 @@
 					<li class="pull-right">
 						<form class="search-form">
 							<input name="search-keyword"
-								   class="search-box"
+								   class="search-box form-control"
 								   placeholder="Search author, genre, etc..."></input>
 						</form>
 						<a href="#" class="search-button">

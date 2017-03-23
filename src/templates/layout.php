@@ -29,6 +29,12 @@
 
 	<!-- CUSTOM -->
 
+	<!-- customized bootstrap -->
+	<link rel="stylesheet" href="vendors/bootstrap/styles/bootstrap.custom.min.css">
+
+	<!-- Bootstrap 4 cards -->
+	<!-- <link rel="stylesheet" href="assets/styles/cards.css"> -->
+
 	<!-- custom style -->
 	<link rel="stylesheet" href="assets/styles/main.css">
 

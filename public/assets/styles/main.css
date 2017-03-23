@@ -1,44 +1,24 @@
-body {
-	font-family: "Raleway",Arial;	
-	background-color: #0a0020;
-	color: #866183;
-	font-size: 15px;
+/* Global classes */
+
+.main-heading {
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
-/**.container {
-	width: 1000px;
-}*/
-
-h1, h2, h3, h4 {
-	font-family: "Lora","Times New Roman";	
-}
-
-.jumbotron {
-	border-radius: 0 !important;
-}
-
-/*
-.navbar {	
-	background-color: #554b6b;
-	margin-bottom: 0;
-	border: 0;
-}*/
-/*
-.navbar > .container-fluid {
-	padding: 0;
-}
-
-.navbar > .container-fluid > .navbar-collapse {
-	padding: 0 10px;
-}*/
+/* Header/nav styles */
 
 .navbar-nav {
 	width: 100%;
 	text-align: center;
 }
+
 .navbar-nav > li {
 	float: none;
 	display: inline-block;
+}
+
+.navbar-nav > li a {
+	font-size: 16px;
 }
 
 .navbar-brand {
@@ -47,14 +27,8 @@ h1, h2, h3, h4 {
 
 .popover {
 	width: 225px;
-	left: -75px !important;
+	left: -78px !important;
 }
-
-.navbar-right {
-    /*margin-right: 0; */
-}
-
-input.form-control {}
 
 .logo-img {
 	padding: 5px;
@@ -79,77 +53,6 @@ input.form-control {}
 	padding: 10px;
 }
 
-.jumbotron {
-	height: 600px;
-	margin-bottom: 0 !important;
-	padding-top: 130px;
-	padding-bottom: 10px;		
-	color: #f5f5f5;
-	background: linear-gradient(
-			      rgba(41, 7, 36, 0.7), 
-			      rgba(41, 7, 36, 0.7)
-			    ),
-				url("../images/hero.jpg") 
-					no-repeat
-					bottom center/cover;
-}
-
-.jumbotron > * {
-	margin-top: 60px;
-}
-
-.jumbotron > h2 {
-    width: 400px;
-    margin: 60px auto 0;			
-}
-
-.arrow-scroll {			
-    bottom: 0;
-    position: absolute;
-    left: 48%;
-}
-
-#about-section {
-	margin: 20px 0;
-}
-
-.about-buttons {	
-	position: absolute;
-	z-index: 1;
-	margin-left: 370px;
-	margin-top: -24px;
-}
-
-.about-buttons > a {			
-    width: 40px;
-    height: 40px;
-    border: 1px solid white;
-    padding: 5px;
-    text-align: center;
-    border-radius: 50%;
-    background: white;
-    font-weight: bold;
-    font-size: 1.5em;
-    float: left;
-    margin: 3px;
-    text-decoration: none;
-}
-
-.about-content {
-	margin-top: 40px;
-}
-
-.about-content > div > div {			
-	background: lightblue;
-	padding: 10px 30px;
-	height: 500px;
-}
-
-.about-content > div > div > div:nth-child(even) {
-	text-align: right;
-	float: right;
-}
-
 /*footer*/
 
 footer {	
@@ -165,42 +68,145 @@ footer {
 	margin: 0 5px;
 }
 
-/*genre page*/
+/* Homepage styles */
 
-#genres > .row > div {
-    padding-top: 20px;
+.jumbotron {
+	height: 600px;
+	margin-bottom: 0 !important;
+	padding-top: 130px;
+	padding-bottom: 10px;		
+	color: #f5f5f5;
+	background: linear-gradient(
+			      rgba(41, 7, 36, 0.7), 
+			      rgba(41, 7, 36, 0.7)
+			    ),
+				url("../images/hero.jpg") 
+					no-repeat
+					bottom center/cover;
 }
 
-#genres > .row > div > div {
-	width: 100%;
-	height: 100%;
+.jumbotron > .row {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.jumbotron > .row > a {
+	margin-top: 5%;
+}
+
+.arrow-scroll {			
+    bottom: 0;
+    position: absolute;
+  	left: 50%;
+  	margin-left: -30px;
+}
+
+#accordion > .panel-default {
+	margin-bottom: 20px;
+}
+
+#accordion > .panel-default .panel-heading {
+	height: 80px;
+}
+
+/*genre page*/
+
+.card-columns {
+    -webkit-column-count: 4;
+       -moz-column-count: 4;
+     		column-count: 4;
+
+	-webkit-column-gap: 20px;
+   	   -moz-column-gap: 20px;
+			column-gap: 20px;
+
+	-webkit-column-width: 180px;
+	   -moz-column-width: 180px;
+			column-width: 180px;
+}
+
+.card-columns > .card {
+	margin-bottom: 20px;
+}
+
+#genre-divider,
+#stories-home > .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+#genre-divider > .card {
+	margin-bottom: 0;
+    background: transparent;
+}
+
+.genre-box-sm {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.genre-box-sm > .card > a,
+.genre-box-lg > .card > a {
 	background-color: white;
+	padding: 10px;
+	display: block;
+}
+
+.genre-box-sm > .card > a > h4,
+.genre-box-lg > .card > a > h4 {
+	margin: 10px;
+}
+
+.genre-box-lg {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
 }
 
 .tile-a {
 	height: 100px;
 }
-
 .tile-b {
 	height: 110px;
 }
-
 .tile-1 {
 	height: 120px;
 }
-
 .tile-2 {
 	height: 140px;
 }
-
 .tile-3 {
 	height: 160px;
 }
-
 .tile-4 {
 	height: 180px;
 }
-
 .tile-5 {
 	height: 200px;
 }
+
+/* Story browse page styles */
+
+.week-story {
+	width: 420px;
+	height: 420px;
+	background: white;
+}
+
+.new-stories,
+.rising-stories {
+	width: 210px;
+	height: 180px;
+	margin: 0 auto;
+	background: lightblue;
+}/*
+
+.featured-stories {
+	width: 450px;
+	height: 220px;
+	margin: 10px;
+	background: orange;
+}*/
