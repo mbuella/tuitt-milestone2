@@ -12,4 +12,8 @@ function stories_action() {
 	require_once('../src/views/stories.php');
 }
 
+function story_action() {
+	require_once('../src/views/story.php');
+}
+
 ?>

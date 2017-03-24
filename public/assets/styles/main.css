@@ -72,6 +72,7 @@ footer {
 
 .jumbotron {
 	height: 600px;
+	margin-top: -20px;
 	margin-bottom: 0 !important;
 	padding-top: 130px;
 	padding-bottom: 10px;		
@@ -130,8 +131,7 @@ footer {
 	margin-bottom: 20px;
 }
 
-#genre-divider,
-#stories-home > .card-columns {
+#genre-divider {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -190,23 +190,60 @@ footer {
 
 /* Story browse page styles */
 
+#stories-home .panel {
+	padding: 10px;
+	color: #0a0020;
+}
+
+#stories-home .panel h4 {
+	margin: 0;
+}
+
 .week-story {
-	width: 420px;
 	height: 420px;
-	background: white;
+	background: green;
 }
 
 .new-stories,
+.rising-stories,
+.featured-stories {
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+.new-stories {
+	background: orange;
+}
+
 .rising-stories {
-	width: 210px;
-	height: 180px;
-	margin: 0 auto;
 	background: lightblue;
-}/*
+}
 
 .featured-stories {
-	width: 450px;
-	height: 220px;
-	margin: 10px;
-	background: orange;
-}*/
+	background: #e86161;
+}
+
+.stories-right {
+	padding: 0;
+}
+
+.stories > .card img,
+.stories img,
+.story-recom img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/* Story read page styles */
+
+#story {
+	color: #0a0020;
+}
+
+.story-body p {
+	line-height: 1.85em;
+	text-align: justify;
+	text-indent: 2em;
+	margin-left: 10px;
+	margin-right: 10px;
+}
