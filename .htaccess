@@ -1,6 +1,7 @@
 RewriteEngine On
 # WARNING!!! Change when copied to another workplace
-RewriteBase /tuitt/kwntu/
+#RewriteBase /tuitt/kwntu/
+RewriteBase /
 
 RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
 RewriteRule ^ %1 [L,NE,R=302]

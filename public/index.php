@@ -9,10 +9,6 @@
 	/*** URI ROUTES ***/
 	// route the request internally
 	$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-	#echo $uri;
-
-	//root uri - update accordingly when in a different directory
-	$index = '/tuitt/kwntu/';
 
 	/** Routing starts here **/
 	switch ($uri) {
