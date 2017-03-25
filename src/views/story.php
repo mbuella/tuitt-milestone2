@@ -8,25 +8,25 @@
 			<div class="panel">
 				<div class="panel story-cover text-center">
 					<div class="panel-heading" style="padding: 20px;">
-						<img src="assets/images/stories/apple.jpg"
+						<img src="assets/images/covers/wuthering-heights.jpg"
 							 class="img-thumbnail img-responsive">
 						
 					</div>
 					<h4>
 						<strong>Wuthering Heights</strong>
 					</h4>
-					<small>by Emily Bronte</small>
+					<small>by Emily Jane Brontë</small>
 				</div>
 				<div class="list-group chapter-list">
 					<a href="#" class="list-group-item">Chapter 1</a>
 					<a href="#" class="list-group-item">Chapter 2</a>
 					<a href="#" class="list-group-item">Chapter 3</a>
 					<a href="#" class="list-group-item">Chapter 4</a>
-					<a href="#" class="list-group-item active">Chapter 5</a>
-					<a href="#" class="list-group-item disabled">Chapter 6</a>
-					<a href="#" class="list-group-item disabled">Chapter 7</a>
-					<a href="#" class="list-group-item disabled">Chapter 8</a>
-					<a href="#" class="list-group-item disabled">Chapter 9</a>
+					<span class="list-group-item active">Chapter 5</span>
+					<span class="list-group-item disabled">Chapter 6</span>
+					<span class="list-group-item disabled">Chapter 7</span>
+					<span class="list-group-item disabled">Chapter 8</span>
+					<span class="list-group-item disabled">Chapter 9</span>
 					<!-- display this page when no user logged in (guest) -->
 					<a href="#"
 						class="list-group-item
@@ -36,27 +36,40 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-6 story-body">
+		<div class="col-md-7 story-body">
 			<div class="panel">
 				<div class="panel-heading">
-					<h3 class="text-center">Chapter 5</h3>					
+					<!-- Display if the story belongs to the current user -->
+					<div class="story-top" data-spy="affix" data-offset-top="75">
+						<button class="btn btn-info">
+							<i class="fa fa-plus"></i>
+							<span>Insert chapter</span>
+						</button>			
+						<span class="react-icons">
+							<button class="btn btn-info">
+								<i class="fa fa-thumbs-o-up"></i>
+							</button>				
+							<button class="btn btn-info">
+								<i class="fa fa-heart-o"></i>
+							</button>				
+							<button class="btn btn-info">
+								<i class="fa fa-smile-o"></i>
+							</button>				
+							<button class="btn btn-info">
+								<i class="fa fa-frown-o"></i>
+							</button>								
+						</span>	
+						<div class="clearfix"></div>						
+					</div>
+					<h3 class="text-center">Chapter 5</h3>	
 				</div>
 				<div class="panel-body">
+					<!-- Divide each text lines per pagination count -->
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						In the course of time Mr. Earnshaw began to fail. He had been active and healthy, yet his strength left him suddenly; and when he was confined to the chimney-corner he grew grievously irritable. A nothing vexed him; and suspected slights of his authority nearly threw him into fits. This was especially to be remarked if any one attempted to impose upon, or domineer over, his favourite: he was painfully jealous lest a word should be spoken amiss to him; seeming to have got into his head the notion that, because he liked Heathcliff, all hated, and longed to do him an ill-turn. It was a disadvantage to the lad; for the kinder among us did not wish to fret the master, so we humoured his partiality; and that humouring was rich nourishment to the child’s pride and black tempers. Still it became in a manner necessary; twice, or thrice, Hindley’s manifestation of scorn, while his father was near, roused the old man to a fury: he seized his stick to strike him, and shook with rage that he could not do it.
 					</p>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						At last, our curate (we had a curate then who made the living answer by teaching the little Lintons and Earnshaws, and farming his bit of land himself) advised that the young man should be sent to college; and Mr. Earnshaw agreed, though with a heavy spirit, for he said ‘Hindley was nought, and would never thrive as where he wandered.’
 					</p>
 					<nav class="text-center" aria-label="Chapter navigation">
 						<ul class="pagination">
@@ -99,26 +112,26 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 story-recom">
+		<div class="col-md-2 story-recom">
 			<div class="panel text-center">
 				<div class="panel-heading">
 					<h4>SIMILAR BOOKS</h4>
 				</div>
 				<div class="panel-body">					
 					<img class="img-responsive img-thumbnail"
-						 src="assets/images/stories/panorama.jpg"
+						 src="assets/images/covers/panorama.jpg"
 					 	 alt="Card image">
 
 					<img class="img-responsive img-thumbnail"
-						 src="assets/images/stories/pyramids.jpg"
+						 src="assets/images/covers/pyramids.jpg"
 					 	 alt="Card image">
 
 					<img class="img-responsive img-thumbnail"
-						 src="assets/images/stories/vintage.jpg"
+						 src="assets/images/covers/vintage.jpg"
 					 	 alt="Card image">
 
 					<img class="img-responsive img-thumbnail"
-						 	 src="assets/images/stories/historic-building.jpg"
+						 	 src="assets/images/covers/historic-building.jpg"
 					 alt="Card image">
 				</div>
 				

@@ -12,7 +12,7 @@
 	#echo $uri;
 
 	//root uri - update accordingly when in a different directory
-	$index = '/mbuella/kwntu/';
+	$index = '/tuitt/kwntu/';
 
 	/** Routing starts here **/
 	switch ($uri) {
@@ -21,11 +21,15 @@
 			break;
 		
 		case $index . "signup":
-	    	echo "Hello!";
+	    	signup_action();
 			break;
 
 		case $index . "genres":
 	    	genres_action();
+			break;
+
+		case $index . "authors":
+	    	authors_action();
 			break;
 
 		case $index . "stories":

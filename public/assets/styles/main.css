@@ -5,6 +5,19 @@
 	margin-bottom: 20px;
 }
 
+.jumbotron {
+	color: black;
+}
+
+.jumbotron > div.row {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+hr {
+	margin-top: 0;
+	border: 2px solid;
+}
 /* Header/nav styles */
 
 .navbar-nav {
@@ -70,8 +83,8 @@ footer {
 
 /* Homepage styles */
 
-.jumbotron {
-	height: 600px;
+.jumbotron.home-page {
+	height: 700px;
 	margin-top: -20px;
 	margin-bottom: 0 !important;
 	padding-top: 130px;
@@ -86,14 +99,14 @@ footer {
 					bottom center/cover;
 }
 
-.jumbotron > .row {
+.jumbotron.home-page > .row {
 	width: 70%;
 	margin: 0 auto;
 	margin-top: 5%;
 }
 
-.jumbotron > .row > a {
-	margin-top: 5%;
+.jumbotron.home-page > .row > a {
+	margin-top: 40px;
 }
 
 .arrow-scroll {			
@@ -113,57 +126,14 @@ footer {
 
 /*genre page*/
 
-.card-columns {
-    -webkit-column-count: 4;
-       -moz-column-count: 4;
-     		column-count: 4;
-
-	-webkit-column-gap: 20px;
-   	   -moz-column-gap: 20px;
-			column-gap: 20px;
-
-	-webkit-column-width: 180px;
-	   -moz-column-width: 180px;
-			column-width: 180px;
-}
-
-.card-columns > .card {
-	margin-bottom: 20px;
-}
-
-#genre-divider {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-}
-
-#genre-divider > .card {
-	margin-bottom: 0;
-    background: transparent;
-}
-
-.genre-box-sm {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-}
-
-.genre-box-sm > .card > a,
-.genre-box-lg > .card > a {
-	background-color: white;
+.genre-box-sm > div,
+.genre-box-lg > div {
 	padding: 10px;
-	display: block;
 }
 
-.genre-box-sm > .card > a > h4,
-.genre-box-lg > .card > a > h4 {
-	margin: 10px;
-}
-
-.genre-box-lg {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
+.genre-box-sm > div > h4,
+.genre-box-lg > div > h4 {
+	margin-top: 5px;
 }
 
 .tile-a {
@@ -234,6 +204,22 @@ footer {
 	margin-bottom: 20px;
 }
 
+/* Salvattore config */
+.grid[data-columns]::before {
+	content: '4 .column.size-1of4';
+}
+
+.grid[data-columns] > div img {
+	margin-bottom: 20px;
+}
+
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of4 {
+	width: 22.75%; 
+	margin: 0 10px;
+}
+
 /* Story read page styles */
 
 #story {
@@ -244,6 +230,26 @@ footer {
 	line-height: 1.85em;
 	text-align: justify;
 	text-indent: 2em;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+    letter-spacing: .025em;
+}
+
+.story-body .affix {
+	top: 10px;
+}
+
+
+.story-body .affix button {
+	opacity: 0.75;
+}
+
+.story-body .affix button:hover {
+	opacity: 1;
+}
+
+.story-body .affix + h3 {
+	position: relative;
+	top: 35px;
+	margin-bottom: 45px;
 }

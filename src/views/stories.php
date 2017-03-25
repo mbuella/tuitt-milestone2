@@ -36,49 +36,39 @@
 		</div>
 	</div>
 
-	<div class="stories">
-		<div class="row">
-			<div class="col-md-3 col-sm-3">
-				<a href="story">
-					<img class="img-responsive img-thumbnail"
-						 src="assets/images/stories/apple.jpg"
-					 	 alt="Card image">
-				 </a>	
+	<hr>
 
-				<a href="#">
-					<img class="img-responsive img-thumbnail"
-						 src="assets/images/stories/panorama.jpg"
-					 	 alt="Card image">
-				 </a>			
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="#">
-					<img class="img-responsive img-thumbnail"
-						 src="assets/images/stories/pyramids.jpg"
-					 	 alt="Card image">
-				 </a>
-				
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="#">
-					<img class="img-responsive img-thumbnail"
-						 src="assets/images/stories/vintage.jpg"
-					 	 alt="Card image">
-				 </a>
-				
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="#">
-					<img class="img-responsive img-thumbnail"
-						 	 src="assets/images/stories/historic-building.jpg"
-					 alt="Card image">
-				 </a>
-				
-			</div>
+	<div class="row">
+		<div class="grid" data-columns>
+			<a href="story">
+				<img class="img-responsive img-thumbnail"
+					 src="assets/images/covers/wuthering-heights.jpg"
+				 	 alt="Card image">
+			</a>			
+			<a href="#">
+				<img class="img-responsive img-thumbnail"
+					 src="assets/images/covers/panorama.jpg"
+				 	 alt="Card image">
+		 	</a>			
+			<a href="#">
+				<img class="img-responsive img-thumbnail"
+					 src="assets/images/covers/pyramids.jpg"
+				 	 alt="Card image">
+			</a>
+			<a href="#">
+				<img class="img-responsive img-thumbnail"
+					 src="assets/images/covers/vintage.jpg"
+				 	 alt="Card image">
+			</a>	
+			<div class="clearfix"></div>	
 		</div>
+		
 	</div>
 
 </main>
+
+<!-- Salvattore -->
+<script src="vendors/salvattore/scripts/salvattore.min.js"></script>
 
 <?php $main = ob_get_clean() ?>
 

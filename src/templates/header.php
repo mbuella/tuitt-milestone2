@@ -6,7 +6,7 @@
 				<button type="button"
 					class="navbar-toggle"
 					data-toggle="collapse"
-					data-target="#bs-example-navbar-collapse-1">
+					data-target="#main-nav">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -18,7 +18,7 @@
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="main-nav">
 				<ul class="nav navbar-nav">
 					<li class="pull-left">
 						<a href="../kwntu/#">
@@ -26,7 +26,7 @@
 						</a>
 					</li>
 					<li class="pull-left"><a href="genres">Genres</a></li>
-					<li class="pull-left"><a href="#">Authors</a></li>
+					<li class="pull-left"><a href="authors">Authors</a></li>
 
 					<!-- Centered logo image -->
 					<li class="hidden-xs logo-img">
@@ -71,7 +71,7 @@
           </div>
           <button type="submit" class="btn btn-success">Sign in</button>
           <span>or</span>
-          <a href="#" class="btn btn-link">Register</a>
+          <a href="signup" class="btn btn-link">Register</a>
         </form>
     </div>		
 </header>

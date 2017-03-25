@@ -4,11 +4,11 @@
 
 <main class="container">	
 	<!-- Jumbotron -->	
-	<div class="jumbotron text-center">
+	<div class="jumbotron home-page text-center">
 		<div class="row">
 			<h2>Halina't magbasa ng mga kwentong sariling atin.</h2> 
 
-			<a class="btn btn-primary btn-lg" href="#" style="margin-top: 40px">Tara na!</a>
+			<a class="btn btn-primary btn-lg" href="genres">Tara na!</a>
 
 			<div class="arrow-scroll">
 				<a class="btn btn-link" id="home-next">
