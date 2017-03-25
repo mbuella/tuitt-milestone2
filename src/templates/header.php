@@ -21,7 +21,7 @@
 			<div class="collapse navbar-collapse" id="main-nav">
 				<ul class="nav navbar-nav">
 					<li class="pull-left">
-						<a href="../kwntu/#">
+						<a href="#">
 							<span class="fa fa-home"></span>	        		
 						</a>
 					</li>
@@ -54,7 +54,7 @@
 						</a>
 					</li>
 					<li class="pull-right">
-						<a href="../kwntu/#about">About</a>
+						<a href="#about">About</a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
