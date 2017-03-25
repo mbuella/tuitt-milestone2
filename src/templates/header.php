@@ -21,7 +21,7 @@
 			<div class="collapse navbar-collapse" id="main-nav">
 				<ul class="nav navbar-nav">
 					<li class="pull-left">
-						<a href="../kwntu/#">
+						<a href="#">
 							<span class="fa fa-home"></span>	        		
 						</a>
 					</li>
@@ -40,21 +40,21 @@
 								   class="search-box form-control"
 								   placeholder="Search author, genre, etc..."></input>
 						</form>
-						<a href="#" class="search-button">
+						<button class="search-button btn btn-link navbar-btn">
 							<span class="fa fa-search"></span>        	
-						</a>
+						</button>
 					</li>
 					<li class="pull-right">
-						<a href="#"
+						<button class="btn btn-link navbar-btn" 
 							data-toggle="popover"
 							title=""
 							data-placement="auto">
 							Login
 							<strong class="caret"></strong>
-						</a>
+						</button>
 					</li>
 					<li class="pull-right">
-						<a href="../kwntu/#about">About</a>
+						<a href="#about">About</a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
