@@ -3,6 +3,10 @@
 <head>
 	<title><?= $title ?></title>
 
+	<!-- base href -->
+	<base href="https://kwntu.herokuapp.com/">
+	<!-- <base href="../kwntu/"> -->
+
 	<!-- Meta tags -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
