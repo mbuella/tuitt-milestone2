@@ -1,0 +1,51 @@
+title: Ang Tundo Man May Langit Din
+author: ni Andres Cristobal Cruz
+genre: classic
+short desc: As in the Noli, we have in Ang Tundo Man a story of individuals in love, unfolded against a carefully authenticated social background in order to dramatize the contemporary national experience.
+
+
+title: Bata, Bata... Pa'no Ka Ginawa?
+author: ni Lualhati Bautista
+genre: classic
+short desc: Hanggang sa ang bata ay hindi na bata kundi ama, o ina. Ano ang ituuro niya ngayon sa kanyang mga anak? Lahat ng dapat niyang matutuhan ngayon pa lang, hindi pagkamasunurin at pagkakimi, kundi pagkibo pag may sasabihin at paglaban pag kailangan.
+
+
+title: Illustrado
+author: ni Miguel Syjuco
+genre: classic
+short desc: It begins with a body. On a clear day in winter, the battered corpse of Crispin Salvador is pulled from the Hudson River—taken from the world is the controversial lion of Philippine literature.
+
+title: Titser
+author: Liwayway A. Arceo
+genre: classic
+short desc: Tells of how Amelita and Mauro engage themselves in answering the needs of their community and 	succeed in its upliftment and development.
+
+title: Masquerade
+author:  Melissa de la Cruz
+genre: Fantasy
+short desc: Schuyler Van Alen is starting to get more comfortable with her newfound vampire powers, but she still has many unanswered questions.
+
+
+title: Rizal Without the Overcoat
+author:  Ambeth R. Ocampo
+genre: History
+short desc: This book is a collection of essays from Ambeth R. Ocampo’s newspaper column “Looking Back” that began in the Philippine Daily Globe and later moved to the Philippine Daily Inquirer.
+
+
+title: Ang Paboritong Libro ni Hudas
+author: Bob ong
+genre: Humor
+short desc: Pagkatapos mong basahin ito, mamamatay ka
+
+
+title: Para Kay B (o kung paano dinevastate ng pag-ibig ang 4 out of 5 sa atin)
+author: Ricky Lee
+genre: Romance
+short desc: Me quota ang pag-ibig. Sa bawat limang umiibig ay isa lang ang magiging maligaya. Kasama ka ba sa quota?
+
+
+title: Bakit Hindi Ka Crush ng Crush Mo?
+author: Ramon Bautista
+genre: Romance
+short desc: Bakit hindi ka crush ng crush mo? Ang aklat na ito ay kailangan mo sa buhay pagkatapos mong matugunan ang food, clothing, security at iba pang nasa pinaka-ibaba ng Maslow's Hierarchy of Needs. Bago ka umibig, at para maabot ang self-actualization, magbasa-basa ka muna. Thank you.
+

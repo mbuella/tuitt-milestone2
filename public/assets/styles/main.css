@@ -209,15 +209,53 @@ footer {
 	content: '4 .column.size-1of4';
 }
 
-.grid[data-columns] > div img {
-	margin-bottom: 20px;
-}
-
 /* These are the classes that are going to be applied: */
 .column { float: left; }
 .size-1of4 {
 	width: 22.75%; 
 	margin: 0 10px;
+}
+
+.story {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.story img {
+	width: 100%;
+}
+
+.story .panel {
+	margin-bottom: 0;
+	padding: 10px;
+	padding-bottom: 30px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	opacity: 0.9
+}
+
+.story .panel > div {
+	position: absolute; 
+	bottom: 0; 
+	right: 0; 
+	padding: 10px;
+}
+
+.story .panel i.fa-bookmark {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+}
+
+.story .panel h4 {
+	margin-right: 20px;
+}
+
+.story .panel small {
+	font-size: 11.5px;
 }
 
 /* Story read page styles */
@@ -238,7 +276,6 @@ footer {
 .story-body .affix {
 	top: 10px;
 }
-
 
 .story-body .affix button {
 	opacity: 0.75;

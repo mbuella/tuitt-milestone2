@@ -8,31 +8,30 @@
 			<div class="panel">
 				<div class="panel story-cover text-center">
 					<div class="panel-heading" style="padding: 20px;">
-						<img src="assets/images/covers/wuthering-heights.jpg"
-							 class="img-thumbnail img-responsive">
-						
+						<img src="assets/images/covers/bata-bata.jpg"
+							 class="img-thumbnail img-responsive">						
 					</div>
 					<h4>
-						<strong>Wuthering Heights</strong>
+						<strong>Bata, Bata... Pa'no Ka Ginawa?</strong>
 					</h4>
-					<small>by Emily Jane Brontë</small>
+					<small>ni Lualhati Bautista</small>
 				</div>
 				<div class="list-group chapter-list">
-					<a href="#" class="list-group-item">Chapter 1</a>
-					<a href="#" class="list-group-item">Chapter 2</a>
-					<a href="#" class="list-group-item">Chapter 3</a>
-					<a href="#" class="list-group-item">Chapter 4</a>
-					<span class="list-group-item active">Chapter 5</span>
-					<span class="list-group-item disabled">Chapter 6</span>
-					<span class="list-group-item disabled">Chapter 7</span>
-					<span class="list-group-item disabled">Chapter 8</span>
-					<span class="list-group-item disabled">Chapter 9</span>
+					<a href="#" class="list-group-item">Kabanata 1</a>
+					<a href="#" class="list-group-item">Kabanata 2</a>
+					<a href="#" class="list-group-item">Kabanata 3</a>
+					<a href="#" class="list-group-item">Kabanata 4</a>
+					<span class="list-group-item active">Kabanata 5</span>
+					<span class="list-group-item disabled">Kabanata 6</span>
+					<span class="list-group-item disabled">Kabanata 7</span>
+					<span class="list-group-item disabled">Kabanata 8</span>
+					<span class="list-group-item disabled">Kabanata 9</span>
 					<!-- display this page when no user logged in (guest) -->
 					<a href="#"
 						class="list-group-item
 							   list-group-item-info
 							   text-center">
-				   		More Chapters</a>
+				   		Higit pang mga Kabanata</a>
 				</div>
 			</div>
 		</div>
@@ -47,29 +46,27 @@
 						</button>			
 						<span class="react-icons">
 							<button class="btn btn-info">
-								<i class="fa fa-thumbs-o-up"></i>
+								<i class="fa fa-bookmark-o"></i>
 							</button>				
 							<button class="btn btn-info">
 								<i class="fa fa-heart-o"></i>
-							</button>				
-							<button class="btn btn-info">
-								<i class="fa fa-smile-o"></i>
-							</button>				
-							<button class="btn btn-info">
-								<i class="fa fa-frown-o"></i>
-							</button>								
-						</span>	
+							</button>						
+						</span>
+						<button class="btn btn-info">
+							<i class="fa fa-trash"></i>
+							<span>Delete chapter</span>
+						</button>				
 						<div class="clearfix"></div>						
 					</div>
-					<h3 class="text-center">Chapter 5</h3>	
+					<h3 class="text-center">Kabanata 5</h3>	
 				</div>
 				<div class="panel-body">
 					<!-- Divide each text lines per pagination count -->
 					<p>
-						In the course of time Mr. Earnshaw began to fail. He had been active and healthy, yet his strength left him suddenly; and when he was confined to the chimney-corner he grew grievously irritable. A nothing vexed him; and suspected slights of his authority nearly threw him into fits. This was especially to be remarked if any one attempted to impose upon, or domineer over, his favourite: he was painfully jealous lest a word should be spoken amiss to him; seeming to have got into his head the notion that, because he liked Heathcliff, all hated, and longed to do him an ill-turn. It was a disadvantage to the lad; for the kinder among us did not wish to fret the master, so we humoured his partiality; and that humouring was rich nourishment to the child’s pride and black tempers. Still it became in a manner necessary; twice, or thrice, Hindley’s manifestation of scorn, while his father was near, roused the old man to a fury: he seized his stick to strike him, and shook with rage that he could not do it.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas diam sit amet nulla porttitor, sed luctus dolor consequat. Ut vehicula nunc nec libero cursus, nec convallis risus posuere. In finibus, nunc vitae faucibus bibendum, augue mauris bibendum quam, eu mattis eros urna aliquam augue. Sed rhoncus scelerisque est, eget consequat quam commodo et. Etiam faucibus metus pretium felis pulvinar ullamcorper. Nam finibus, leo a luctus faucibus, velit dolor suscipit nibh, eu pulvinar nisl turpis nec neque. Maecenas tellus sem, aliquet et tellus sed, suscipit vulputate nulla. Aliquam erat volutpat. Nam nec est eu risus vehicula imperdiet nec interdum ex. Fusce tristique iaculis sagittis.
 					</p>
 					<p>
-						At last, our curate (we had a curate then who made the living answer by teaching the little Lintons and Earnshaws, and farming his bit of land himself) advised that the young man should be sent to college; and Mr. Earnshaw agreed, though with a heavy spirit, for he said ‘Hindley was nought, and would never thrive as where he wandered.’
+					Aenean justo turpis, fermentum id magna eget, vehicula blandit purus. Ut auctor urna a metus bibendum fermentum. Suspendisse ultrices dignissim pellentesque. Donec condimentum, metus dictum gravida scelerisque, tortor dui porta ligula, eu laoreet odio sem non neque. Maecenas vitae sagittis mauris. Phasellus non leo in ex bibendum ultrices. Curabitur egestas, risus nec efficitur ultrices, urna sem scelerisque purus, vitae malesuada ex est ut sem. Ut rutrum, odio non accumsan laoreet, leo nisi fringilla nisi, nec congue felis erat viverra lacus. In vulputate odio quis ex suscipit, vel convallis urna sodales. Nam auctor arcu a varius eleifend. Duis vitae tellus ut dolor condimentum iaculis eu at velit. Morbi mi felis, congue ut arcu et, faucibus varius ex. Etiam tincidunt vel lacus posuere viverra.
 					</p>
 					<nav class="text-center" aria-label="Chapter navigation">
 						<ul class="pagination">
@@ -99,12 +96,12 @@
 					<div class="pull-left">
 						<a href="#" class="btn btn-success">
 				    		<span aria-hidden="true">&larr;</span>
-							Previous <span class="hidden-xs">Chapter</span>
+							Nakaraang <span class="hidden-xs">Kabanata</span>
 						</a>						
 					</div>
 					<div class="pull-right">
 						<a href="#" class="btn btn-success">
-							Next <span class="hidden-xs">Chapter</span>
+							Susunod na <span class="hidden-xs">Kabanata</span>
 				    		<span aria-hidden="true">&rarr;</span>
 						</a>						
 					</div>
@@ -117,22 +114,30 @@
 				<div class="panel-heading">
 					<h4>SIMILAR BOOKS</h4>
 				</div>
-				<div class="panel-body">					
-					<img class="img-responsive img-thumbnail"
-						 src="assets/images/covers/panorama.jpg"
-					 	 alt="Card image">
+				<div class="panel-body">	
+					<a href="#">
+						<img class="img-responsive img-thumbnail"
+							 src="assets/images/covers/bakit-di-ka-crush-ng-crush-mo.jpg"
+						 	 alt="Card image">						
+					</a>				
 
-					<img class="img-responsive img-thumbnail"
-						 src="assets/images/covers/pyramids.jpg"
-					 	 alt="Card image">
+					<a href="#">
+						<img class="img-responsive img-thumbnail"
+							 src="assets/images/covers/ang-tundo-man-may-langit-din.jpg"
+						 	 alt="Card image">						
+					</a>
 
-					<img class="img-responsive img-thumbnail"
-						 src="assets/images/covers/vintage.jpg"
-					 	 alt="Card image">
+					<a href="#">
+						<img class="img-responsive img-thumbnail"
+							 src="assets/images/covers/rizal-without-the-overcoat.jpg"
+						 	 alt="Card image">						
+					</a>
 
-					<img class="img-responsive img-thumbnail"
-						 	 src="assets/images/covers/historic-building.jpg"
-					 alt="Card image">
+					<a href="#">
+						<img class="img-responsive img-thumbnail"
+							 	 src="assets/images/covers/titser.jpg"
+						 alt="Card image">						
+					</a>
 				</div>
 				
 			</div>
