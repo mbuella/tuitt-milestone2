@@ -1,0 +1,12 @@
+{
+    "directories": {
+        "index_php": "/mbuella/kwntu/",
+        "index_html": "../kwntu/"
+    },
+    "database": {
+        "mysql_url": "mysql://ad35esusrdjbehvt:v1ili19gt1aey39t@gk90usy5ik2otcvi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nlntliqj5htrw5ge"
+    },
+    "others": {
+        "styling": "assets_dev.html"
+    }
+}

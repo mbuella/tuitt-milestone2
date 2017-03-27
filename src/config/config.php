@@ -1,25 +1,37 @@
 <?php
 
-/*** ROOT DIR ***/
-//update accordingly when in a different directory
-$index = '/';
-#$index = '/tuitt/kwntu/';
-
 /*** DEBUG ***/
-$debug = 1;
+$debug = 0;
 
-/*** DATABASE ***/
-//$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$url = parse_url("mysql://ad35esusrdjbehvt:v1ili19gt1aey39t@gk90usy5ik2otcvi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nlntliqj5htrw5ge");
-
-/*** CONFIG START HERE ***/
+/*** LOAD JSON CONFIG FILE ***/
+if (!$debug) {
+	$config = json_decode(
+				file_get_contents("../src/config/config_prod.json"),
+				true
+			);
+	$conn_str = getenv($config['database']['mysql_url']);
+}
+else {
+	$config = json_decode(
+				file_get_contents("../src/config/config_dev.json"),
+				true
+			);
+	$conn_str = $config['database']['mysql_url'];
+}
 
 ob_start();
-if (!$debug)
-	include_once('../src/styling/assets_prod.html');
-else
-	include_once('../src/styling/assets_dev.html');
-$vendor = ob_get_clean();	
+include_once('../src/styling/' . $config['others']['styling']);
+$vendor = ob_get_clean();
+
+/*** PHP BASE DIR ***/
+//updates accordingly when in a different directory
+$index = $config['directories']['index_php'];
+
+/*** HTML BASE DIR ***/
+$index_html = $config['directories']['index_html'];
+
+/*** DATABASE ***/
+$url = parse_url($conn_str);
 
 $server = $url["host"];
 $username = $url["user"];
@@ -28,9 +40,10 @@ $db = substr($url["path"], 1);
 
 $conn = mysqli_connect($server, $username, $password, $db);
 
-if ($conn) {
-	//echo "Connection successful";
-	//set database vars that can be accessed across the system
-}
+//part of the model
+if (!$conn) 
+	die('Connection failed!<br>' . mysqli_connect_error());	
+
+//all database processing must be done at model
 
 ?>

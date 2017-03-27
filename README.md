@@ -14,6 +14,8 @@
 * [Claire Coullon][7] and [Designspiration][8] for the content block design
 * [davidcochran][9] for the navbar layout
 * [nikhil][10] for the soft search bar
+* For sample novels: 
+	* [Wuthering Heights][11]
 
 [//]: # (Links)
 [1]: https://wireframe.cc/uRH7NJ 					"Wireframe for home page"
@@ -28,4 +30,4 @@
 [9]: https://codepen.io/davidcochran/pen/rcHae	 	"Navbar Codepen"
 [10]: https://codepen.io/nikhil/pen/qcyGF	 		"Soft Search Bar Codepen"
 
-http://www.wuthering-heights.co.uk/index.php
+[11]: http://www.wuthering-heights.co.uk/index.php  "Wuthering Heights"
