@@ -38,11 +38,11 @@ $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
 
-$conn = mysqli_connect($server, $username, $password, $db);
+/*$conn = mysqli_connect($server, $username, $password, $db);
 
 //part of the model
 if (!$conn) 
-	die('Connection failed!<br>' . mysqli_connect_error());	
+	die('Connection failed!<br>' . mysqli_connect_error());	*/
 
 //all database processing must be done at model
 

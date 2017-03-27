@@ -7,6 +7,12 @@ $(document).ready(function() {
 		}
 	});
 
+	$(".story").hover(
+		function(e){
+			$(this).children("a:first").children("div").toggleClass("hide");
+		}
+	);
+
 	$('#home-next').on('click', function(e){
 	    $('html, body').animate({
 	        scrollTop: $("#about").offset().top +10
