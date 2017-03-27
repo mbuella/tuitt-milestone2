@@ -1,0 +1,12 @@
+{
+    "directories": {
+        "index_php": "/",
+        "index_html": "../"
+    },
+    "database": {
+        "mysql_url": "JAWSDB_URL"
+    },
+    "others": {
+        "styling": "assets_prod.html"
+    }
+}

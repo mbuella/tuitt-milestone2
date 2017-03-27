@@ -4,8 +4,8 @@
 	<title><?= $title ?></title>
 
 	<!-- base href -->
-	<base href="../">
-	<!-- <base href="../kwntu/"> -->
+	<!-- <base href="../"> -->
+	<base href="<?=$GLOBALS['index_html']?>">
 
 	<!-- Meta tags -->
 	<meta charset="utf-8">
