@@ -44,15 +44,10 @@
 							<span class="fa fa-search"></span>        	
 						</button>
 					</li>
-					<li class="pull-right">
-						<button class="btn btn-link navbar-btn" 
-							data-toggle="popover"
-							title=""
-							data-placement="auto">
-							Login
-							<strong class="caret"></strong>
-						</button>
-					</li>
+					<?php
+						//Display user(signin or profile) popover 
+						echo $user_dropdn;
+					?>
 					<li class="pull-right">
 						<a href="#about">About</a>
 					</li>
@@ -62,16 +57,22 @@
 	</nav>
 
     <div id="popover-content" class="hide">
-      <form role="form">
-          <div class="form-group">
-            <label for="user">Username</label>
-            <input type="text" class="form-control" id="user" placeholder="Username">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-success">Sign in</button>
-          <span>or</span>
-          <a href="signup" class="btn btn-link">Register</a>
-        </form>
+        <div class="panel">
+        	<div class="panel-body">
+        		Logo and Name
+        	</div>
+			<div class="list-group">
+				<a href="#" class="list-group-item">
+					My Profile
+				</a>
+				<a href="#" class="list-group-item">
+					My Stories
+				</a>
+				<div class="separator">A</div>
+			</div>
+			<div class="panel-footer">
+				Log out
+			</div>
+        </div>
     </div>		
 </header>

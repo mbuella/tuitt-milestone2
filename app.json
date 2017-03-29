@@ -1,16 +1,16 @@
 {
-  "name": "kwntu",
+  "name": "tuitt-milestone2",
   "scripts": {
   },
   "env": {
-    "JAWSDB_URL": {
+    "MYSQL_URL": {
       "required": true
     }
   },
   "formation": {
   },
   "addons": [
-    "jawsdb"
+
   ],
   "buildpacks": [
     {
