@@ -1,3 +1,4 @@
+Options +FollowSymLinks
 RewriteEngine On
 # WARNING!!! Change when copied to another workplace
 #RewriteBase /

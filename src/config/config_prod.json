@@ -4,7 +4,7 @@
         "index_html": "../"
     },
     "database": {
-        "mysql_url": "JAWSDB_URL"
+        "mysql_url": "MYSQL_URL"
     },
     "others": {
         "styling": "assets_prod.html"

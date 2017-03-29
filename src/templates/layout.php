@@ -1,3 +1,11 @@
+<?php
+	/*DECLARE GLOBALS*/
+	global $index_html;
+	global $vendor;
+	global $user_dropdn;
+	global $current_user;
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +13,7 @@
 
 	<!-- base href -->
 	<!-- <base href="../"> -->
-	<base href="<?=$GLOBALS['index_html']?>">
+	<base href="<?= $index_html ?>">
 
 	<!-- Meta tags -->
 	<meta charset="utf-8">
@@ -27,7 +35,7 @@
 	<?php
 		#html vendor styles/scripts
 
-		echo $GLOBALS['vendor'];
+		echo $vendor;
 	?>	
 
 
