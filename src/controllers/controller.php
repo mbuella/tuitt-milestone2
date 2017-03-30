@@ -10,15 +10,165 @@ function signup_action() {
 	require_once('../src/views/signup.php');	
 }
 
-function genres_action() {
-	require_once('../src/views/genres.php');
-}
+function read_action() {
+	if (isset($_GET['genre'])) {
+		//remove dashes from the genres
+		$genre = str_replace('-', ' ', $_GET['genre']);
+		$stories = "";
+		//query for stories according to genre
+		if ($stories_query = getStoriesByGenre($genre)) {
+			ob_start();
+			foreach ($stories_query as $key => $story) { //1 row
+				//replace all non-aphnumeric chars into dashes to make a friendly url :)
+				$story_url = "{$story['story_id']}-" . rtrim(preg_replace('/\W+/', '-', strtolower($story['story_title'])),'-');
+				require('../src/templates/story_preview.php');
+			}
+			$stories = ob_get_clean();
+			
+		}
 
-function stories_action() {
-	require_once('../src/views/stories.php');
+		//include genre php page
+		require_once('../src/views/genre.php');
+	}
+	else
+		//include genre php page
+		require_once('../src/views/read.php');
 }
 
 function story_action() {
+	if (isset($_GET['title'])) {
+		//get the id of the story (first char of the title)
+		$story_id_str = strtok($_GET['title'], "-");
+		if(!is_numeric($story_id_str)) {
+			die("The system cannot parse that story URL!");		
+		}
+		else {
+			$story_id = $story_id_str;
+			//query for story with the specific story_id
+			$story = getStoryByID($story_id);
+			//query for story's chapter titles
+			$chapters = getChaptersByStoryID($story_id);
+
+			//detect if chapter is already provided
+			if (!isset($_GET['chapter'])) {
+				$_GET['chapter'] = "intro";
+			}
+
+			# disable the prev and next buttons
+			$page_nav_btns = "";
+			$dxn = "left";
+			$tag = "span";
+			$btn_link = "";
+			$disabled = "disabled";
+			$arrow = "&larr;";
+			$btn_txt = "Previous Chapter";
+
+
+
+			ob_start();
+
+			//display the current chapter (for bookmarked stories)
+			if ($_GET['chapter'] == 'intro') {
+				#display the trailer
+				$title = 'Introduction';
+				$text = addPgphTags($story['story_short_desc']);
+
+				# prev button
+				$page_nav_btns .= require("../src/templates/page_prev_next_btn.php");
+
+				//chapter list - activate intro
+				$tag = 'span';
+				$href = "";
+				$active = "active";
+				$disabled = "";
+			}
+			else {
+				//retrieve the chapter from the database
+				$chapter = getChapterById($story_id,$_GET['chapter']);
+				#display the current chapter
+				$title = $chapter['chapter_title'];
+				$text = addPgphTags($chapter['chapter_text']);
+				//echo $text;
+
+				# set the previous button to current chap_id - 1 or
+				# intro if it becomes 0
+				$tag = "a";
+				$disabled = "";				
+				if ($_GET['chapter'] == 1)
+					$btn_link = "href='story?title=" . $_GET['title'] . "&chapter=intro'";
+				else
+					$btn_link = "href='story?title="
+								. $_GET['title']
+								. "&chapter="
+								. ($_GET['chapter']-1) . "'";
+
+				$page_nav_btns .= require("../src/templates/page_prev_next_btn.php");
+
+				//chapter list
+				$tag = 'a';
+				$href = "href='story?title={$_GET['title']}&chapter=intro'";
+				$active = "";
+				$disabled = "";		
+			}
+
+			//Story nav buttons
+			ob_start();
+			require('../src/templates/chap_nav_btn.php');
+			$chap_nav_btn = ob_get_clean();
+
+			//format the intro link text
+			$chapter_title = "Introduction";
+			//display intro link
+			$chapter_list = require('../src/templates/chapter_list_item.php');
+
+			//chapter list - other chaps
+			foreach ($chapters as $chap) {
+				//select active link
+				if ($_GET['chapter'] == $chap['chapter_id']) {		
+					$tag = 'span';
+					$href = "";
+					$active = "active";
+					$disabled = "";				
+				}
+				else {					
+					$tag = 'a';
+					$href = "href='story?title={$_GET['title']}&chapter={$chap['chapter_id']}'";
+					$active = "";
+					$disabled = "";				
+				}		
+
+				$chapter_title = $chap['chapter_title'];
+
+				$chapter_list .= require('../src/templates/chapter_list_item.php');
+			}
+
+			# set the next button to current chap_id + 1
+			# if it is less than or equal to size				
+			$arrow = "&rarr;";
+			$btn_txt = "Next Chapter";
+			$dxn = "right";
+			$tag = "span";
+			$btn_link = "";
+			$disabled = "disabled";
+			if ($_GET['chapter'] < count($chapters)) {
+				$tag = "a";
+				$disabled = "";
+				$btn_link = "href='story?title="
+							. $_GET['title']
+							. "&chapter="
+							. ($_GET['chapter']+1) . "'";
+			}
+
+			$page_nav_btns .= require "../src/templates/page_prev_next_btn.php";
+
+			$chapter_out = [
+				"id" => $_GET['chapter'],
+				"title" => $title,
+				"text" => $text
+			];
+		}
+	}
+
 	require_once('../src/views/story.php');
 }
 
@@ -44,16 +194,14 @@ function ajax_action($action) {
 					//prepare JSON data
 					$ajax_si = [
 						'status' => 'success',
-						'content' => "<strong>Welcome {$user_info['username']}!</strong><p>Please wait while we bring you home...</p>",
-						'redirect' => $index_html
+						'content' => "<strong>Welcome {$user_info['username']}!</strong><p>Please wait while we reload the page...</p>"
 					];
 				}
 				else { //invalid password
 					//prepare JSON data
 					$ajax_si = [
 						'status' => 'danger',
-						'content' => "<strong>Invalid password!</strong><p>Please enter the valid password.</p>",
-						'redirect' => $index_html
+						'content' => "<strong>Invalid password!</strong><p>Please enter the valid password.</p>"
 					];
 				}
 			}
@@ -66,10 +214,46 @@ function ajax_action($action) {
 			}
 
 		break;
+
+		case 'updatechap':
+			//execute sql to update the chapter
+			if (updateChapter(
+				$_POST['story_id'],
+				$_POST['chap_id'],
+				$_POST['chap_title'],
+				$_POST['chap_par']
+				)) {
+					$ajax_si = [
+						'status' => 'success',
+						'content' => 'Chapter has been updated successfully!'
+					];
+			}
+			else {
+				$ajax_si = [
+					'status' => 'danger',
+					'content' => 'Error encountered while updating your chapter!'
+				];
+			}
+			break;
 		
+		case 'deletechap':		
+			if (deleteChapter($_POST['story_id'],$_POST['chap_id'])) {
+					$ajax_si = [
+						'status' => 'success',
+						'content' => 'Chapter has been removed successfully!'
+					];
+			}
+			else {
+				$ajax_si = [
+					'status' => 'danger',
+					'content' => 'Error encountered while removing your chapter!'
+				];				
+			}
+		break;
+
 		default:
 			$ajax_si = [
-				'status' => 'error',
+				'status' => 'danger',
 				'content' => 'Invalid request!'
 			];
 		break;
@@ -79,6 +263,20 @@ function ajax_action($action) {
 	echo json_encode($ajax_si);
 }
 
+/*** USER-DEFINED FUNCTIONS ***/
+function addPgphTags($text) {
+	$pText = "";
+	//get the first fragment of the string
+	$paragraph = strtok($text, "\n");
+	//continue adding p tags until
+	//the last fragment is found
+	while($paragraph !== false) {
+		if (strlen($paragraph) > 1)
+			$pText .= "<p>" . $paragraph . "</p>";
+		$paragraph = strtok("\n");
+	}
+	return $pText;
+}
 
 /*** GLOBAL VARIABLES ***/
 

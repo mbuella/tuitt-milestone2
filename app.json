@@ -1,17 +1,14 @@
 {
   "name": "tuitt-milestone2",
-  "scripts": {
-  },
+  "description": "",
+  "scripts": {},
   "env": {
     "MYSQL_URL": {
       "required": true
     }
   },
-  "formation": {
-  },
-  "addons": [
-
-  ],
+  "formation": {},
+  "addons": [],
   "buildpacks": [
     {
       "url": "heroku/php"

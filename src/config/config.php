@@ -1,7 +1,7 @@
 <?php
 
 /*** DEBUG ***/
-$debug = 0;
+$debug = 1;
 
 /*** LOAD JSON CONFIG FILE ***/
 if (!$debug) {
@@ -39,9 +39,16 @@ $password = $url["pass"];
 $db = substr($url["path"], 1);
 
 $conn = mysqli_connect($server, $username, $password, $db);
+//SQL charset
+mysqli_set_charset($conn,'utf8');
 
 //part of the model
-if (!$conn) 
+if (!$conn)
 	die('Connection failed!<br>' . mysqli_connect_error());	
+else {
+	/*** MAIN MYSQL TRANS HERE ***/
+
+	mysqli_autocommit($conn, TRUE);
+}
 
 ?>

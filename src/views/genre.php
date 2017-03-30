@@ -1,4 +1,4 @@
-<?php $title = 'Classics | kwntu' ?>
+<?php $title = ucwords($genre) . ' | kwntu' ?>
 
 <?php ob_start() ?>
 
@@ -39,17 +39,11 @@
 	<hr>
 
 	<div class="row">
-		<div class="grid" data-columns>
-<!-- 			<a href="story">
-				<img class="img-responsive img-thumbnail"
-					 src="assets/images/covers/wuthering-heights.jpg"
-				 	 alt="Card image">
-				<div>
-					<h5>Hello World!</h5>
-				</div>
-			</a>	 -->		
-			<div class="story">
-				<a href="story">
+		<div class="grid" data-columns>	
+			<?php // display loop here, $stories ?>
+			<?= $stories ?>
+			<!-- <div class="story">
+				<a href="story?title=12345-bata-bata-pano-ka-ginawa">
 					<img class="img-responsive img-thumbnail"
 						 src="assets/images/covers/bata-bata.jpg"
 					 	 alt="Card image">
@@ -74,7 +68,7 @@
 						</div>
 					</div>
 				</a>
-			</div>	
+			</div>
 			<div class="story">
 				<a href="#">
 				<img class="img-responsive img-thumbnail"
@@ -146,8 +140,8 @@
 							</div>
 						</div>
 					</a>
-			</div>
-			<div class="clearfix"></div>	
+			</div> -->
+			<div class="clearfix"></div>
 		</div>
 		
 	</div>

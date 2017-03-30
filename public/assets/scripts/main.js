@@ -1,14 +1,16 @@
 $(document).ready(function() {
 
-/*	$("[data-toggle=popover]").popover({
-	    html: true, 
-		content: function() {
-  			return $('#popover-content').html();
-		}
-	});*/
+	/*** GLOBAL VARIABLES ***/
+	var submitIcon = $('.search-button');
+	var inputBox = $('.search-box');
+	var searchForm = $('.search-form');
+	var isOpen = false;
+
+	/*** LISTENERS/EVENTS ***/
 
 	$(".story").hover(
 		function(e){
+			$(this).children(".prevw-btn").toggleClass("hide");
 			$(this).children("a:first").children("div").toggleClass("hide");
 		}
 	);
@@ -19,11 +21,146 @@ $(document).ready(function() {
 	    }, 1500);
 	});
 
+	//edit button
+	$('#writer-tools').on('click','#edit-chapter-btn',
+		function(e){
+        //disable nav buttons
+        $('.screen').addClass('screen-activated');
+        //display the story body
+        $('.story-body').css('z-index','999');
+        //disable other buttons
+        $('.story-nav .btn').attr('disabled',true);
+		
+		//add contenteditable attr
+        $('.chapter-title, .chapter-text').attr('contenteditable', 'true');
+        //set edit css attr
+        $('span.chapter-title').addClass('chapter-title-edit');
+        $('div.chapter-text').addClass('chapter-text-edit');
+        //replace the buttons with reset and preview buttons
+        $('#writer-tools').load('assets/html/edit-tools.html');
+	});
 
-	var submitIcon = $('.search-button');
-	var inputBox = $('.search-box');
-	var searchForm = $('.search-form');
-	var isOpen = false;
+	//preview changes button
+	$('#writer-tools').on('click','#edit-preview-btn',
+		function(e){
+			//remove contenteditable attr
+	        $('.chapter-title, .chapter-text').attr('contenteditable', 'false');
+	        //set edit css attr
+	        $('span.chapter-title').removeClass('chapter-title-edit');
+	        $('div.chapter-text').removeClass('chapter-text-edit');
+        	
+	        //replace the buttons with cancel and save buttons
+	        $('#writer-tools').load('assets/html/edit-tools-confirm.html');		
+	});
+	
+	//cancel edit button
+	$('#writer-tools').on('click','#edit-cancel-btn',
+		function(e){
+			if ($('#edit-cancel-btn').hasClass('confirm-btn')) {
+				window.location.reload(true);
+			}
+			else {
+				$(this)
+					.addClass('confirm-btn')
+					.children('span')
+					.text("Are you sure?");				
+			}
+	});
+
+
+	$('#writer-tools').on('click','#edit-save-btn',
+		function(e){
+			if ($('#edit-save-btn').hasClass('confirm-btn')) {
+                e.preventDefault();
+
+				var story_id = $("#story_id").val();
+				var chap_id = $("#chapter_id").val();
+				var chap_title = $('.chapter-title').text();
+				var chap_par = "";
+
+				//iterate through the paragraphs
+				$('.chapter-text > p').each(function(){
+					chap_par += $(this).text().trim() + "\n";
+				});
+
+				var data = {
+					'story_id': story_id,
+					'chap_id': chap_id,
+					'chap_title': chap_title,
+					'chap_par': chap_par				
+				};
+
+				//send the processed array to server
+		    	$.post('ajax/updatechap', data,
+		    		function(response,status){
+		    			if (status == 'success') {
+							//reload
+							console.log(response);
+							window.location.reload(true);
+			    		}
+			    		else {
+			    			//handle ajax error
+			    			console.log(status);
+			    		}
+		    		}
+		    	);
+
+                e.preventDefault();
+		    	
+			}
+			else {
+				$(this)
+					.addClass('confirm-btn')
+					.children('span')
+					.text("Are you sure?");				
+			}
+	});
+
+	$('#writer-tools').on('click','#delete-chapter-btn',
+		function(e){
+			if ($('#delete-chapter-btn').hasClass('confirm-btn')) {
+
+                e.preventDefault();
+
+				var story_id = $("#story_id").val();
+				var chap_id = $("#chapter_id").val();
+
+				var data = {
+					'story_id': story_id,
+					'chap_id': chap_id			
+				};
+
+				//send the processed array to server
+		    	$.post('ajax/deletechap', data,
+		    		function(response,status){
+		    			if (status == 'success') {
+							//reload
+							console.log(response);
+							//redirect to the intro page
+							window.location.replace(
+								$(".chapter-list > .list-group-item.active")
+									.prev()
+									.attr('href')
+							);
+			    		}
+			    		else {
+			    			//handle ajax error
+			    			console.log(status);
+			    		}
+		    		}
+		    	);
+
+                e.preventDefault();
+			}
+			else {
+				$(this)
+					.addClass('confirm-btn')
+					.children('span')
+					.text("Are you sure?");			
+			}
+		}
+	);
+
 
 	submitIcon.click(function(){
 	    if(isOpen == false){
@@ -67,6 +204,18 @@ $(document).ready(function() {
     	//disable form fields
     	$fields.prop("disabled",true);
 
+    	//display 'processing' message
+
+		$("#signin-msg-holder").load('assets/html/alert.html',
+			function(xhr){
+				//add class for alert type
+				$("#signin-msg-holder > div.alert").addClass("alert-info");	 
+				//write message
+				$("#signin-msg").html("<i class='fa fa-spin fa-spinner'></i>Signing in...");
+				console.log(status+' '+xhr);
+			}
+		);
+
     	$.post('ajax/signin', data,
     		function(response,status){
     			if (status == 'success') {
@@ -82,7 +231,7 @@ $(document).ready(function() {
 								if (response.status == 'success') {
 									//redirect to home page (after 3 seconds)
 									$(this).delay(3000).queue(function(next){
-										window.location = response.redirect;
+										window.location.reload(true);
 									});
 								}
 								else {
@@ -96,10 +245,15 @@ $(document).ready(function() {
 	    		}
 	    		else {
 	    			//handle ajax error
+	    			console.log(status);
 	    		}
     		}
     	);
 
 	});
+
+	/*** MAIN ***/
+
+
 
 });

@@ -25,20 +25,16 @@
 	    	signup_action();
 			break;
 
-		case $index . "genres":
-	    	genres_action();
-			break;
-
-		case $index . "authors":
-	    	authors_action();
-			break;
-
-		case $index . "stories":
-	    	stories_action();
+		case $index . "read":
+	    	read_action();
 			break;
 
 		case $index . "story":
 	    	story_action();
+			break;
+
+		case $index . "authors":
+	    	authors_action();
 			break;
 
 		# AJAX REQUEST ROUTE
@@ -52,8 +48,14 @@
 			# Restrict access to AJAX-calls only
 			if( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] )
 				&& ( $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' ) ) {
-					if($index . "ajax/signin") {
+					if($uri === $index . "ajax/signin") {
 						ajax_action("signin");
+					}
+					else if($uri === $index . "ajax/updatechap") {
+						ajax_action("updatechap");						
+					}
+					else if($uri === $index . "ajax/deletechap") {
+						ajax_action("deletechap");						
 					}
 				break;
 			}

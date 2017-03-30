@@ -25,7 +25,7 @@
 							<span class="fa fa-home"></span>	        		
 						</a>
 					</li>
-					<li class="pull-left"><a href="genres">Genres</a></li>
+					<li class="pull-left"><a href="read">Stories</a></li>
 					<li class="pull-left"><a href="authors">Authors</a></li>
 
 					<!-- Centered logo image -->
