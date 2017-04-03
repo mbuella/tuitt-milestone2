@@ -48,6 +48,7 @@ if (!$conn)
 else {
 	/*** MAIN MYSQL TRANS HERE ***/
 
+	//always enable autocommit
 	mysqli_autocommit($conn, TRUE);
 }
 

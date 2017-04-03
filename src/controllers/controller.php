@@ -48,6 +48,8 @@ function story_action() {
 			$story = getStoryByID($story_id);
 			//query for story's chapter titles
 			$chapters = getChaptersByStoryID($story_id);
+			//set the current story being read (default intro)
+			setCurrentStoryRead($story_id);
 
 			//detect if chapter is already provided
 			if (!isset($_GET['chapter'])) {
@@ -83,6 +85,8 @@ function story_action() {
 				$disabled = "";
 			}
 			else {
+				//current chapter read is not intro
+				setCurrentStoryRead($story_id,$_GET['chapter']);
 				//retrieve the chapter from the database
 				$chapter = getChapterById($story_id,$_GET['chapter']);
 				#display the current chapter
@@ -140,6 +144,9 @@ function story_action() {
 				$chapter_title = $chap['chapter_title'];
 
 				$chapter_list .= require('../src/templates/chapter_list_item.php');
+
+				//include chapter list last				
+				require('../src/templates/chapter_list_last.php');
 			}
 
 			# set the next button to current chap_id + 1
@@ -174,6 +181,28 @@ function story_action() {
 
 function authors_action() {
 	require_once('../src/views/pendingpage.php');
+}
+
+function save_chapter_action() {
+	//prepare new data
+	$new_chapter = $_POST['chapter'];
+	print_r($new_chapter);
+	$current_story = getCurrentStoryRead();
+	$chapters_size = countChaptersByStoryID($current_story['story_id']);
+	//increment chapter id by one
+	$new_chapter_id = $chapters_size['count']+1;
+	echo "$new_chapter_id";
+	//call add chapter function
+	if(addChapter(
+		$new_chapter_id,
+		$current_story['story_id'],
+		$new_chapter['title'],
+		$new_chapter['text']
+	)) {
+		//redirect to new chapter URL
+		//$story_title
+		header("Location: story?title={$current_story['story_id']}&chapter={$new_chapter_id}");
+	}
 }
 
 
@@ -216,10 +245,12 @@ function ajax_action($action) {
 		break;
 
 		case 'updatechap':
+			//get current story and chapter
+			$current_story = getCurrentStoryRead();
 			//execute sql to update the chapter
 			if (updateChapter(
-				$_POST['story_id'],
-				$_POST['chap_id'],
+				$current_story['story_id'],
+				$current_story['chapter_id'],
 				$_POST['chap_title'],
 				$_POST['chap_par']
 				)) {
@@ -237,7 +268,9 @@ function ajax_action($action) {
 			break;
 		
 		case 'deletechap':		
-			if (deleteChapter($_POST['story_id'],$_POST['chap_id'])) {
+			//get current story and chapter
+			$current_story = getCurrentStoryRead();
+			if (deleteChapter($current_story['story_id'],$current_story['chapter_id'])) {
 					$ajax_si = [
 						'status' => 'success',
 						'content' => 'Chapter has been removed successfully!'
@@ -249,6 +282,15 @@ function ajax_action($action) {
 					'content' => 'Error encountered while removing your chapter!'
 				];				
 			}
+		break;
+
+		case 'addchapform':
+			ob_start();
+			require "../src/templates/form_add_chapter.php";
+			$ajax_si = [
+				'status' => 'success',
+				'content' => ob_get_clean()
+			];
 		break;
 
 		default:
@@ -271,7 +313,7 @@ function addPgphTags($text) {
 	//continue adding p tags until
 	//the last fragment is found
 	while($paragraph !== false) {
-		if (strlen($paragraph) > 1)
+		if (strlen($paragraph) >= 1 && $paragraph !== "")
 			$pText .= "<p>" . $paragraph . "</p>";
 		$paragraph = strtok("\n");
 	}

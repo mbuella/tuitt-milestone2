@@ -7,7 +7,11 @@ if ($current_user = getCurrentMember()):
 ?>
 
 <div id="writer-tools">
-	<button class="btn btn-success" id="add-chapter-btn">
+	<button
+		class="btn btn-success"
+		id="add-chapter-btn"
+		data-toggle="modal"
+		data-target="#addChapModal">
 		<i class="fa fa-plus"></i>
 		<span>Insert chapter</span>
 	</button>			

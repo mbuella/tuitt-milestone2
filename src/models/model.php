@@ -92,7 +92,7 @@ function getChaptersByStoryID($id) {
 	$sql = "SELECT chapter_id, chapter_title
 			FROM chapters c
 			WHERE c.story_id = {$id}
-			ORDER BY c.chapter_id, c.story_id, c.chapter_idx;";
+			ORDER BY c.chapter_id, c.story_id;";
 
 	//query database
 	if($result = mysqli_query($conn,$sql)) {
@@ -103,6 +103,25 @@ function getChaptersByStoryID($id) {
 	//else error has happened
 	return false;	
 }	
+
+//Count all chapters of a certain book
+//max instead of count
+function countChaptersByStoryID($id) {
+	global $conn;
+	$sql = "SELECT MAX(c.chapter_id) as count
+			FROM chapters c
+			WHERE c.story_id = {$id}
+			LIMIT 1;";
+
+	//query database
+	if($result = mysqli_query($conn,$sql)) {
+		//all rows
+		$count = mysqli_fetch_assoc($result);
+		return $count;
+	}
+	//else error has happened
+	return false;		
+}
 
 //Retrieve chapter by id
 function getChapterById($story_id, $chapter_id = 0) {
@@ -126,9 +145,40 @@ function getChapterById($story_id, $chapter_id = 0) {
 //Retrieve story info by user
 //Add new story by user
 //Display chapters info of a story
-//Add a new chapter by user (with pos option)
-//Edit chapter info of a story
+//Add a new chapter by user
+function addChapter($id,$story_id,$title,$text) {
+	global $conn;
+	$sql = "INSERT INTO chapters(
+				chapter_id,
+				story_id,
+				chapter_title,
+				chapter_text
+			) VALUES (
+				$id,
+				$story_id,
+				'$title',
+				'$text'
+			);";
 
+	//disable autocommit
+	mysqli_autocommit($conn, FALSE);
+
+	//query database
+	if($result = mysqli_query($conn,$sql)) {
+		//all rows
+		//successful update
+		echo "success";
+		//commit
+		mysqli_commit($conn);
+		return true;
+	}
+	//else error has happened
+	echo "fail";
+	mysqli_rollback($conn);
+	return false;	
+}
+
+//Edit chapter info of a story
 function updateChapter($story_id, $chapter_id, $chapter_title, $chapter_text) {
 	global $conn;
 	$sql = "UPDATE chapters 
@@ -174,6 +224,22 @@ function deleteChapter($story_id, $chapter_id) {
 	//else error has happened
 	mysqli_rollback($conn);
 	return false;	
+}
+
+//set current story/chapter being read by the user
+function setCurrentStoryRead($story_id, $chapter_id = 'intro') {
+	$_SESSION['current_story'] = [
+		"story_id" => $story_id,
+		"chapter_id" => $chapter_id
+	];
+}
+
+//get current story/chapter being read by the user
+function getCurrentStoryRead() {
+	if (isset($_SESSION['current_story'])) {
+		return $_SESSION['current_story'];
+	}
+	return false;
 }
 
 ?>

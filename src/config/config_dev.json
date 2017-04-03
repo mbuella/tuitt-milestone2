@@ -1,10 +1,10 @@
 {
     "directories": {
-        "index_php": "/mbuella/kwntu/",
+        "index_php": "/tuitt/kwntu/",
         "index_html": "../kwntu/"
     },
     "database": {
-        "mysql_url": "mysql://root:@localhost:3306/kwntu"
+        "mysql_url": "mysql://root:root@localhost:3306/kwntu"
     },
     "others": {
         "styling": "assets_dev.html"

@@ -37,10 +37,12 @@
 	    	authors_action();
 			break;
 
-		# AJAX REQUEST ROUTE
-
 		case $index . "story":
 	    	story_action();
+			break;
+
+		case $index . "save_chapter":
+	    	save_chapter_action();
 			break;
 
 		default:
@@ -56,6 +58,9 @@
 					}
 					else if($uri === $index . "ajax/deletechap") {
 						ajax_action("deletechap");						
+					}
+					else if($uri === $index . "ajax/addchapform") {
+						ajax_action("addchapform");						
 					}
 				break;
 			}

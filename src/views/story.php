@@ -9,8 +9,6 @@ $title = "{$chapter_out['title']} - {$story['story_title']} | kwntu" ?>
 		<div class="col-md-3">
 			<div class="panel">
 				<div class="panel story-cover text-center">
-					<input type="hidden" id="story_id" value=<?= $story['story_id'] ?>>
-					<input type="hidden" id="chapter_id" value=<?= $chapter_out['id'] ?>>
 					<div class="panel-heading" style="padding: 20px;">
 						<img src="assets/images/covers/<?= $story['story_cover_filename'] ?>"
 							 class="img-thumbnail img-responsive">						
@@ -25,13 +23,6 @@ $title = "{$chapter_out['title']} - {$story['story_title']} | kwntu" ?>
 						// chapters
 						echo $chapter_list;
 					?>
-
-					<!-- display this page when no user logged in (guest) -->
-					<a href="#"
-						class="list-group-item
-							   list-group-item-info
-							   text-center">
-				   		Higit pang mga Kabanata</a>
 				</div>
 			</div>
 		</div>
@@ -119,6 +110,44 @@ $title = "{$chapter_out['title']} - {$story['story_title']} | kwntu" ?>
 <div class="screen">
 	
 </div>
+
+<div class="modal fade" id="addChapModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3 class="modal-title">Add Chapter</h3>
+			</div>
+			<div class="modal-body">
+				<form method="POST" action="save_chapter">
+					<div class="form-group">
+						<label for="chapter-title">Title of the chapter</label>
+						<input type="text"
+							name="chapter[title]"
+							id="chapter-title"
+							class="form-control"
+							placeholder="example: Chapter 20: Gabi ng Lagim!">						
+					</div>
+					<div class="form-group">
+						<label for="chapter-text">Chapter content</label>
+						<textarea name="chapter[text]"
+							id="chapter-text"
+							class="form-control"
+							placeholder="example: One day, isang araw..." 
+							rows=10></textarea>
+					</div>
+					<button type="submit"
+						name = "chapter[submit]"
+						id = "chapter-submit"
+						class="btn btn-info pull-right">
+						Create new chapter</button>
+					<div class="clearfix"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <?php $main = ob_get_clean() ?>
 

@@ -67,14 +67,12 @@ $(document).ready(function() {
 			}
 	});
 
-
+	//save edit button
 	$('#writer-tools').on('click','#edit-save-btn',
 		function(e){
 			if ($('#edit-save-btn').hasClass('confirm-btn')) {
                 e.preventDefault();
 
-				var story_id = $("#story_id").val();
-				var chap_id = $("#chapter_id").val();
 				var chap_title = $('.chapter-title').text();
 				var chap_par = "";
 
@@ -84,8 +82,6 @@ $(document).ready(function() {
 				});
 
 				var data = {
-					'story_id': story_id,
-					'chap_id': chap_id,
 					'chap_title': chap_title,
 					'chap_par': chap_par				
 				};
@@ -116,22 +112,15 @@ $(document).ready(function() {
 			}
 	});
 
+	//delete chapter button
 	$('#writer-tools').on('click','#delete-chapter-btn',
 		function(e){
 			if ($('#delete-chapter-btn').hasClass('confirm-btn')) {
 
                 e.preventDefault();
 
-				var story_id = $("#story_id").val();
-				var chap_id = $("#chapter_id").val();
-
-				var data = {
-					'story_id': story_id,
-					'chap_id': chap_id			
-				};
-
 				//send the processed array to server
-		    	$.post('ajax/deletechap', data,
+		    	$.post('ajax/deletechap', {},
 		    		function(response,status){
 		    			if (status == 'success') {
 							//reload
@@ -161,7 +150,7 @@ $(document).ready(function() {
 		}
 	);
 
-
+	//search box
 	submitIcon.click(function(){
 	    if(isOpen == false){
 	        $('.search-form').css('display','inherit')

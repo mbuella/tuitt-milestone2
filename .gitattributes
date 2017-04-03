@@ -1,1 +1,2 @@
 app.json merge=ours
+src/config/config_dev.json merge=ours
