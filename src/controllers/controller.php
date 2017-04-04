@@ -200,7 +200,6 @@ function save_chapter_action() {
 		$new_chapter['text']
 	)) {
 		//redirect to new chapter URL
-		//$story_title
 		header("Location: story?title={$current_story['story_id']}&chapter={$new_chapter_id}");
 	}
 }

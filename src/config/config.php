@@ -1,7 +1,7 @@
 <?php
 
 /*** DEBUG ***/
-$debug = 1;
+$debug = 0;
 
 /*** LOAD JSON CONFIG FILE ***/
 if (!$debug) {
