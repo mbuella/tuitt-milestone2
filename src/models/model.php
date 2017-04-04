@@ -39,7 +39,12 @@ function getCurrentMember() {
 
 //set current user (SESSION)
 function setCurrentMember($user_info) {
-	$_SESSION['user'] = $user_info;
+	$_SESSION['user'] = [
+		"user_id" => $user_info["user_id"],
+		"username" => $user_info["username"],
+		"fullname" => $user_info["fullname"],
+		"role" => $user_info["role"]
+	];
 }
 
 //*edit user
@@ -156,8 +161,8 @@ function addChapter($id,$story_id,$title,$text) {
 			) VALUES (
 				$id,
 				$story_id,
-				'$title',
-				'$text'
+				\"$title\",
+				\"$text\"
 			);";
 
 	//disable autocommit
@@ -167,13 +172,12 @@ function addChapter($id,$story_id,$title,$text) {
 	if($result = mysqli_query($conn,$sql)) {
 		//all rows
 		//successful update
-		echo "success";
 		//commit
 		mysqli_commit($conn);
 		return true;
 	}
 	//else error has happened
-	echo "fail";
+	echo "ADD CHAPTER FAILED!<br>" . mysql_error($conn);
 	mysqli_rollback($conn);
 	return false;	
 }
@@ -206,7 +210,7 @@ function updateChapter($story_id, $chapter_id, $chapter_title, $chapter_text) {
 //Delete chapter from a story
 function deleteChapter($story_id, $chapter_id) {
 	global $conn;
-	$sql = "DELETE FROM `chapters`
+	$sql = "DELETE FROM chapters
 			WHERE story_id = '{$story_id}' 
 			AND chapter_id = '{$chapter_id}'";
 
