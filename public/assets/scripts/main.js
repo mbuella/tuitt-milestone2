@@ -21,6 +21,10 @@ $(document).ready(function() {
 	    }, 1500);
 	});
 
+	$('#signin-dropdown').on('click',function(){
+		var x = setTimeout('$("#signin-uname").focus()', 10);
+	});
+
 	//edit button
 	$('#writer-tools').on('click','#edit-chapter-btn',
 		function(e){
@@ -173,6 +177,10 @@ $(document).ready(function() {
 	    }
 	});
 
+	$('#signin-btn').click(function(e){
+		e.stopPropagation();
+		$('#signin-dropdown').click();
+	});
 
 	/* AJAX REQUESTS */
 

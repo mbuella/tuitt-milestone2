@@ -1,5 +1,5 @@
 <div class="story">
-	<button class="btn btn-info prevw-btn hide" style="position: absolute; right: 0; z-index: 1">Sneek Peek</button>
+	<button class="btn btn-info prevw-btn hide">Sneek Peek</button>
 	<a href="story?title=<?= $story_url ?>">
 		<img class="img-responsive img-thumbnail"
 			 src="assets/images/covers/<?= $story['story_cover_filename'] ?>"

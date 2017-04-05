@@ -9,9 +9,9 @@ $title = "{$chapter_out['title']} - {$story['story_title']} | kwntu" ?>
 		<div class="col-md-3">
 			<div class="panel">
 				<div class="panel story-cover text-center">
-					<div class="panel-heading" style="padding: 20px;">
+					<div class="panel-heading">
 						<img src="assets/images/covers/<?= $story['story_cover_filename'] ?>"
-							 class="img-thumbnail img-responsive">						
+							 class="img-thumbnail img-responsive">				
 					</div>
 					<h4>
 						<strong><?= $story['story_title'] ?></strong>

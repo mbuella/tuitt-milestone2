@@ -43,7 +43,7 @@ if ($current_user = getCurrentMember()):
 else: //user is not registered/signed in
 ?>
 
-<button class="btn btn-info">
+<button class="btn btn-info" id="signin-btn">
 	<i class="fa fa-user"></i>
 	<span>Signin to like this chapter.</span>
 </button>			

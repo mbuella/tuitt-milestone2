@@ -3,7 +3,7 @@
 <?php ob_start() ?>
 
 <main class="container">
-	<div class="panel" style="padding: 20px;">
+	<div class="panel signup-form">
 	    <div class="row">       
 	        <div class="col-md-12">         
 	            <form method="POST"
