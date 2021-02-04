@@ -6,7 +6,7 @@ services:
       init:
         - docker-php-ext-install mysqli
         - a2enmod headers rewrite
-        - ln -snf "${TUGBOAT_ROOT}/public" "${DOCROOT}"
+        - ln -snf "${TUGBOAT_ROOT}" "${DOCROOT}"
         
   mysql:
     image: tugboatqa/mysql:5.6
