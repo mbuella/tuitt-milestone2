@@ -1,0 +1,16 @@
+services:
+  php:
+    image: tugboatqa/php:5.6-apache
+    default: true
+    commands:
+      init:
+        - docker-php-ext-install mysqli
+        - a2enmod headers rewrite
+        - ln -snf "${TUGBOAT_ROOT}" "${DOCROOT}"
+        
+  mysql:
+    image: tugboatqa/mysql:5.6
+    commands:
+      init:
+        - curl -L https://github.com/mbuella/tuitt-milestone2/raw/master/mysql/dumps/kwntu.sql -o /tmp/kwntu.sql
+        - cat /tmp/kwntu.sql | mysql tugboat
