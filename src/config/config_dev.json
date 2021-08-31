@@ -1,10 +1,10 @@
 {
     "directories": {
-        "index_php": "/mbuella/kwntu/",
-        "index_html": "../kwntu/"
+        "index_php": "/",
+        "index_html": "../"
     },
     "database": {
-        "mysql_url": "mysql://root:@localhost:3306/kwntu"
+        "mysql_url": "mysql://lamp:lamp@database:3306/lamp"
     },
     "others": {
         "styling": "assets_dev.html"
