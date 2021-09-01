@@ -3,9 +3,6 @@
         "index_php": "/",
         "index_html": "../"
     },
-    "database": {
-        "mysql_url": "MYSQL_URL"
-    },
     "others": {
         "styling": "assets_prod.html"
     }

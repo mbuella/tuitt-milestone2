@@ -3,6 +3,13 @@
 	//start session
 	session_start();
 
+	//Composer autoload file
+	require_once '../vendor/autoload.php';
+
+	// Load env vars from .env file
+	$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+	$dotenv->load();
+
 	//general web app config file
 	require_once '../src/config/config.php';
 	

@@ -1,3 +1,4 @@
 config.txt
 /vendor/
 app.json
+.env

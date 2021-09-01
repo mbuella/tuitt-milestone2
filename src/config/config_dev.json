@@ -3,9 +3,6 @@
         "index_php": "/",
         "index_html": "../"
     },
-    "database": {
-        "mysql_url": "mysql://lamp:lamp@database:3306/lamp"
-    },
     "others": {
         "styling": "assets_dev.html"
     }

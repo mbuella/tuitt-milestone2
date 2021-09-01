@@ -1,6 +1,7 @@
 {
     "require": {
-        "php": ">=7.4.11"
+        "php": ">=7.4.11",
+        "vlucas/phpdotenv": "^5.3"
     },
     "extra": {    	
         "engines": {

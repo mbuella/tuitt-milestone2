@@ -9,7 +9,7 @@ if (!$debug) {
 				file_get_contents("../src/config/config_prod.json"),
 				true
 			);
-	$conn_str = getenv($config['database']['mysql_url']);
+	$conn_str = $_ENV['MYSQL_URL'];
 }
 else {
 	$config = json_decode(
